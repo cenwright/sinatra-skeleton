@@ -1,0 +1,36 @@
+<h1><%= @album.title %> <%=@album.artist %> <%= @album.year %></h1>
+<div>
+	<% @album.reviews.each do |review| %>
+		<p><%= review.opinion %></p>
+		<p><%= review.rating %></p>
+	<% end %>
+</div>
+
+
+<div class="top">
+  <img src="/images/logo.jpg">
+        	<h1>Hello</h1>
+ <form class="form-horizontal" method="POST" action="/albums/<%= @album.id %>/comments/new">
+
+<span class="form-group">
+    <label for="opinion" name="opinion" class="col-sm-3 control-label">Review:</label>
+    <span class="col-sm-9">
+      <input type="text" class="form-control" name="opinion" id="opinion" placeholder="What are your thoughts?">
+    </span>
+  </span>
+
+<span class="form-group">
+    <label for="rating" name="rating" class="col-sm-3 control-label">Rating:</label>
+    <span class="col-sm-9">
+      <input type="text" class="form-control" name="rating" id="rating" placeholder="Rate from 0 to 10!" >
+    </span>
+  </span>
+
+  <span class="form-group">
+    <span class="col-sm-offset-3 col-sm-9">
+      <button type="submit" class="btn btn-default btn-xs">Submit</button>
+    </span>
+  </span>
+
+  </form>
+</div>

@@ -1,0 +1,33 @@
+<div class="top">
+  <img src="/images/logo.jpg">
+    	<h1>Add Album</h1>
+        <form class="form-horizontal" method="POST" action="/albums/create">
+
+  <span class="form-group">
+    <label for="title-input-field" name="album-title" class="col-sm-3 control-label">Title:</label>
+    <span class="col-sm-9">
+      <input type="text" class="form-control" name="title" id="title-input-field" placeholder="Title">
+    </span>
+  </span>
+
+  <span class="form-group">
+    <label for="artist-input-field" name="album-artist" class="col-sm-3 control-label">Artist:</label>
+    <span class="col-sm-9">
+      <input type="text" class="form-control" name="artist" id="artist-input-field" placeholder="Artist">
+    </span>
+  </span>
+
+  <span class="form-group">
+    <label for="year-input-field" name="album-year" class="col-sm-3 control-label">Year:</label>
+    <span class="col-sm-9">
+      <input type="text" class="form-control" name="year" id="year-input-field" placeholder="Year">
+    </span>
+  </span>
+  
+  <span class="form-group">
+    <span class="col-sm-offset-3 col-sm-9">
+      <button type="submit" class="btn btn-default btn-xs">Submit</button>
+    </span>
+  </span>
+</form>
+</div>

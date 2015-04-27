@@ -1,1 +1,11 @@
 <h1>Home Page</h1>
+
+<section id="album-container">
+    <% @albums.each do |album| %>
+        <div class="album">
+         	<a href="/albums/<%= album.id %>"><h2><%= album.title %></h2></a>
+         	<h2><%= album.artist %></h2>
+            <h2><%= album.year %></h2>
+        </div>
+    <% end %>
+</section>
